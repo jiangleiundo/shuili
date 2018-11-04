@@ -1,0 +1,53 @@
+<div id="userModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog"> 
+        <div class="modal-content"> 
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="userClose()">×</button>
+                <h4 class="modal-title" ng-bind="paramsModel.modelTitle"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="field-1" class="control-label">姓名：</label>
+                            <input type="text" id="field-1" class="form-control" ng-model="paramsModel.name"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="field-2" class="control-label">手机号：</label>
+                            <input type="text" id="field-2" class="form-control" ng-model="paramsModel.phone"/>
+                        </div> 
+                    </div> 
+                    
+                </div> 
+                <div class="row" ng-hide="paramsModel.addType == 0">
+                    <div class="col-md-6"> 
+                        <div class="form-group"> 
+                            <label for="field-3" class="control-label">密码：</label>
+                            <input type="text" id="field-3" class="form-control" ng-model="paramsModel.pwd"/>
+                        </div> 
+                    </div> 
+                    <div class="col-md-6"> 
+                        <div class="form-group"> 
+                            <label for="field-4" class="control-label">公司名称：</label>
+                            <input type="text" id="field-4" class="form-control" ng-model="paramsModel.company"/>
+                        </div> 
+                    </div> 
+                </div>
+                <div class="row"> 
+                    <div class="col-md-6"> 
+                        <div class="form-group"> 
+                            <label for="field-5" class="control-label">部门名称：</label>
+                            <input type="text" id="field-5" class="form-control" ng-model="paramsModel.department"/>
+                        </div> 
+                    </div> 
+                </div>
+            </div> 
+            <div class="modal-footer"> 
+            	<button type="button" class="btn btn-md waves-effect waves-light" ng-click="userClose()">取消</button> 
+                <button type="button" class="btn btn-default waves-effect waves-light" ng-click="userSubmit()">提交</button>
+            </div> 
+        </div> 
+    </div>
+</div>

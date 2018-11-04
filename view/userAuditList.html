@@ -1,0 +1,40 @@
+<div class="com_top">
+	<div class="com_top_lf"><i class=" md-apps"></i> 待审核用户列表</div>
+</div>
+<div class="card-md-box m-t-20">
+	<div class="com_md_lf"> 姓名：</div>
+	<div class="com_md_lf"><input type="text" class="form-control" placeholder="请输入姓名查找" ng-model="userModel.search" /></div>
+	<div class="com_md_lf"><a class="btn btn-default" ng-click="search(userModel.search)"><i class="md-search"></i> 搜索</a></div>
+</div>
+<div class="card-box">
+	<table class="table">
+		 <thead>
+	 	  	   <tr>
+	 	  	   	    <td>序号</td>	
+	 	  	   	    <td>姓名</td>	
+	 	  	   	    <td>性别</td>
+	 	  	   	    <td>手机号</td>
+	 	  	   	    <td>公司名称</td>
+	 	  	   	    <td>部门名称</td>
+	 	  	   	    <td>申请时间</td>
+	 	  	   	    <td>操作</td>
+	 	  	   </tr>			 	  	  			 	  	   
+	 	  </thead>
+	 	  <tbody id="tbody">
+	 	  	   <tr ng-repeat="item in userModel.userArr">
+	 	  	   	    <td ng-bind="$index + 1 + (page.nowPage - 1)*page.selectPageNum"></td>
+	 	  	   	    <td ng-bind ="item.userName"></td>
+	 	  	   	    <td ng-bind="item.gender"></td>
+	 	  	   	    <td ng-bind="item.platformId"></td>
+	 	  	   	    <td ng-bind="item.company"></td>
+	 	  	   	    <td ng-bind="item.department"></td>
+	 	  	   	    <td ng-bind="item.registerTime"></td>
+	 	  	   	    <td><a class="btn btn-default" ng-click ="doWithRegisiter(item.userId, 1)">同意</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-danger" ng-click="doWithRegisiter(item.userId, 2)">拒绝</a></td>
+	 	  	   	</tr>
+	 	  </tbody>
+	</table>
+</div>
+
+<div ng-include="'include/page/page.html'"></div>
+
+<div ng-include="'include/adminModal/userTips.html'"></div>

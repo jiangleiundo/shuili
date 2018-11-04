@@ -1,0 +1,27 @@
+<div class="com_top">
+	<div class="com_top_lf"><i class=" md-apps"></i> 欢迎登陆水利后台管理系统</div>
+</div>
+
+
+<div class="info_container">
+	<div class="info_item">
+		<span class="info_line"></span>
+		<div class="info_text">当前管理员</div>
+		<div class="info_des"></div>
+	</div>
+	<div class="info_item">
+		<span class="info_line"></span>
+		<div class="info_text">用户名：</div>
+		<div class="info_des" ng-bind="indexModel.adminName"></div>
+	</div>
+	<div class="info_item">
+		<span class="info_line"></span>
+		<div class="info_text">管理员类型：</div>
+		<div class="info_des" ng-bind="indexModel.adminType == '1'? '超级管理员' : '普通管理员'"></div>
+	</div>
+	<div class="info_item">
+		<span class="info_line"></span>
+		<div class="info_text">最近登陆：</div>
+		<div class="info_des" ng-bind="indexModel.adminLastLoginTime"></div>
+	</div>
+</div>

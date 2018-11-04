@@ -1,0 +1,11 @@
+<div id="userTips" style="display: none;">
+	<div class="tip_bg"></div>
+	<div class="tipModal">
+		<div class="tipMoadl_top">温馨提示</div>
+		<div class="tipMoadl_txt" ng-bind="userModel.tips"></div>
+		<div class="tipMoadl_btm">
+			<button class="btn btn-md" ng-click="clickForQuit()">取消</button>
+			<button class="btn btn-default" ng-click="clickForSure(userModel.curID, userModel.status)" style="float: right;">确定</button>
+		</div>
+	</div>
+</div>

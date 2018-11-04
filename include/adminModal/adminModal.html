@@ -1,0 +1,53 @@
+<div id="adminModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog"> 
+        <div class="modal-content"> 
+            <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="adminClose()">×</button>
+                <h4 class="modal-title" ng-bind="moadlModel.modalTitle"></h4>
+            </div> 
+            <div class="modal-body"> 
+                <div class="row" ng-hide="moadlModel.userId != 1 && moadlModel.addType != 0"> 
+                    <div class="col-md-6"> 
+                        <div class="form-group"> 
+                            <label for="field-1" class="control-label" ng-bind="moadlModel.modaltop"></label>
+                            <input type="text" id="field-1" class="form-control" ng-model="moadlModel.txtUserName">
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="row" ng-hide="moadlModel.addType == 0">
+                    <div class="col-md-6"> 
+                        <div class="form-group"> 
+                            <label for="field-2" class="control-label">新密码</label> 
+                            <input type="text" id="field-2" class="form-control" ng-model="moadlModel.txtPwd2"/>
+                        </div> 
+                    </div> 
+                </div>
+                <div class="row" ng-hide="moadlModel.userId != 1 && moadlModel.addType != 0"> 
+                    <div class="col-md-6"> 
+                        <div class="form-group"> 
+                            <label for="field-3" class="control-label" ng-bind="moadlModel.modalbtm"></label>
+                            <input type="text" id="field-3" class="form-control" ng-model="moadlModel.txtPwd">
+                        </div> 
+                    </div> 
+                </div>
+                 <!--<div class="row"> 
+                    <div class="col-md-12"> 
+                       <div class="userPeremison_top">权限管理(多选)</div>
+                       <div class="userPeremison_main">
+                       	   <span ng-class="item.defaultClass"  ng-repeat="item in moadlModel.permissArr" ng-click="itemClick(item.id)" ng-bind="item.val"></span>
+                       	   <span class="btn_item" data-id="2">用户管理</span>
+                       	   <span class="btn_item" data-id="3">用户管理</span>
+                       	   <span class="btn_item" data-id="4">用户管理</span>
+                       	   <span class="btn_item" data-id="5">用户管理</span>
+                       	   <span class="btn_item" data-id="6">用户管理</span>
+                       	   <span class="btn_item" data-id="7">用户管理</span>
+                       </div>
+                    </div> 
+                </div> -->
+            </div> 
+            <div class="modal-footer"> 
+                <button type="button" class="btn btn-default waves-effect waves-light" ng-click="adminSubmit()">提交</button> 
+            </div> 
+        </div> 
+    </div>
+</div><!-- /.modal -->

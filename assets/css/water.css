@@ -1,0 +1,160 @@
+/*login css*/
+.loginBody{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+    background:url(../images/login-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.loginBox{
+	width:526px;
+	height:344px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	background:url(../images/login-bg-0.png) no-repeat;
+	background-size: contain;
+}
+.login_title{
+    width:280px;
+    height:51px;
+    background:url(../images/shuili-title.png) no-repeat;
+    margin:0 auto;
+    margin-top: 30px;
+}
+.login_err{
+    width:240px;
+    height:34px;
+    line-height: 34px;
+    margin:0 auto;
+    /*display: none;*/
+}
+.error_tip{
+    display: none;
+}
+.user_name{
+    width:240px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+.form_model {
+    background-color: #ddedfc;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    color: #565656;
+    /*padding: 6px 12px;*/
+   padding-left: 5%;
+    height: 34px;
+    width: 95%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.form_model:focus {
+    /*background-color: #FFFFFF;*/
+    border: 1px solid #AAAAAA;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    color: #333333;
+}
+.remBox{
+    height: 16px;
+    line-height: 16px;
+    width: 240px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+.remBox span{
+    vertical-align: -3px;
+    margin-right: 10px;
+}
+.un_sel{
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    width:16px;
+    background: url(../images/login.png) 0 -56px no-repeat;
+}
+.has_sel{
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    width:16px;
+    background: url(../images/login.png) 0 -82px no-repeat;
+}
+.login_btn{
+    width:240px;
+    height:34px;
+    margin:0 auto;
+}
+.btn_login{
+    display:block;
+    width:100%;
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #157AC2;
+    /*border: 1px solid #E3E3E3;*/
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+.btn_login:hover{
+    text-decoration: none;
+    color:#fff;
+    cursor: pointer;
+}
+/* end login css*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

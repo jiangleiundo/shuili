@@ -1,9 +1,3 @@
-/**
- * const.js
- * Created By: 梁勇
- * Data: 2015-08-06
- * Description: 配置文件
- */
 
 /**************基础接口url****************/
 var BASE_URL = "http://meeno.f3322.net:8082/shuili/index.php/"; //内网Url

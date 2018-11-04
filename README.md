@@ -1,2 +1,2 @@
 # shuili
-shuili-admin
+shuili-admin base on angularJS
